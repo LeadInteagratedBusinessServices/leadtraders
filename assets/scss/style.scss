@@ -1,0 +1,215 @@
+/*********************************************************************************
+
+	Template Name: Trydo React Degital Agency Template
+	Note: This is style css.
+
+**********************************************************************************/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ extend
+	|	|___ animations
+	|	|___ shortcode
+	|	|___ spacing
+	|
+	|
+	|___Header Styles
+	|	|___ header
+	|	|___ mainmenu
+	|
+	|
+	|___Inner Styles
+	|	|___ breadcrump 
+	|	|___ section-title 
+	|	|___ button
+	|	|___ pagination
+	|	|___ socialicon
+	|	|___ footer
+	|
+	|___Elements Styles
+	|	|___ portfolio 
+	|	|___ service 
+	|	|___ slider 
+	|	|___ counterup 
+	|	|___ testimonial 
+	|	|___ brand 
+	|	|___ team 
+	|	|___ callto-action 
+	|	|___ tab 
+	|	|___ accordion 
+	|	|___ list 
+	|	|___ contact 
+	|
+	|___BLog Styles
+	|	|___ blog 
+	|	|___ blog-details 
+	|
+	|___Template Styles
+	|	|___ about 
+	|	|___ portfolio-details
+	|	|___ service-details
+	|	|___ preview
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/extend';
+@import 'default/animations';
+@import 'default/shortcode';
+@import 'default/spacing';
+
+
+
+/**************************************
+    Header Styles
+***************************************/
+
+@import 'header/header';
+@import 'header/mainmenu';
+
+
+/**************************************
+    Inner Styles
+***************************************/
+@import 'common/button';
+@import 'common/breadcrump';
+@import 'common/video-popup';
+@import 'common/section-title';
+@import 'common/pagination';
+@import 'common/socialicon';
+
+
+
+/**************************************
+    Elements Styles
+***************************************/
+
+@import 'elements/portfolio';
+@import 'elements/service';
+@import 'elements/slider';
+@import 'elements/counterup';
+@import 'elements/testimonial';
+@import 'elements/brand';
+@import 'elements/team';
+@import 'elements/callto-action';
+@import 'elements/tab';
+@import 'elements/accordion';
+@import 'elements/list';
+@import 'elements/contact';
+@import 'elements/progress';
+@import 'elements/column';
+@import 'elements/404';
+@import 'elements/pricing';
+
+
+
+/**************************************
+    Blog Styles
+***************************************/
+
+@import 'blog/blog';
+@import 'blog/blog-details';
+
+/**************************************
+    Footer Styles
+***************************************/
+@import 'footer/footer';
+
+
+
+
+
+/**************************************
+    Template Styles
+***************************************/
+
+@import 'template/about';
+@import 'template/portfolio-details';
+@import 'template/service-details';
+@import 'template/dark-version';
+@import 'template/preview';
+
+.titles {
+	font-size: 22px;
+	font-weight: bold;
+  }
+  .card1 {
+	float: left;
+	margin-left: 20px;
+	width: 300px;
+  }
+  .card1 .thumbnail {
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+  }
+  .card1 .text {
+	overflow: hidden;
+	position: relative;
+  }
+
+  .cards {
+	max-width: 1200px;
+	// margin: 0px 50px;
+	display: grid;
+	grid-gap: 1rem;
+
+  }
+  .card1s{
+	border: 0.1px solid rgb(255, 253, 253);
+	box-shadow: 0 2px 4px 0 rgba(24, 24, 24, 0.8);
+	margin: 30px 10px;
+	border-radius: 30px;
+
+  }
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+	.cards {
+	  grid-template-columns: repeat(2, 1fr);
+	  
+	}
+	.card1 {
+		float: left;
+		margin-left: 20px;
+		width: 460px;
+	  }
+  }
+
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+	.cards {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+	.card1 {
+		float: left;
+		width: 420px;
+		margin: 0px 50px;
+	  }
+  }
+  .headTitle{
+	  padding: 40px 20px 20px 20px;
+	  text-decoration: underline;
+  }
+  .overallbutton{
+	  margin-top: 30px;
+	  text-align: center;
+  }
